@@ -1,17 +1,17 @@
-import { Bug, Rat, TreeDeciduous } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const services = [
-  { icon: "🐜", name: "General Pest Control" },
-  { icon: "🪳", name: "Termite Control & Inspections" },
-  { icon: "🐜", name: "Ant Pest Control" },
-  { icon: "🕷️", name: "Spider Pest Control" },
-  { icon: "🐝", name: "Wasp & Hornet Control" },
-  { icon: "🦂", name: "Scorpion Pest Control" },
-  { icon: "🐀", name: "Rodent Pest Control" },
-  { icon: "🦟", name: "Mosquito Pest Control" },
-  { icon: "🪲", name: "Flea & Tick Control" },
-  { icon: "🪳", name: "Roach Pest Control" },
-  { icon: "🛏️", name: "Bed Bug Pest Control" },
+  { icon: "🐜", name: "General Pest Control", slug: "pest-control" },
+  { icon: "🪳", name: "Termite Control & Inspections", slug: "termite-inspections" },
+  { icon: "🐜", name: "Ant Pest Control", slug: "ant-control" },
+  { icon: "🕷️", name: "Spider Pest Control", slug: "spider-control" },
+  { icon: "🐝", name: "Wasp & Hornet Control", slug: "wasp-hornet-control" },
+  { icon: "🦂", name: "Scorpion Pest Control", slug: "scorpion-control" },
+  { icon: "🐀", name: "Rodent Pest Control", slug: "rodent-control" },
+  { icon: "🦟", name: "Mosquito Pest Control", slug: "mosquito-control" },
+  { icon: "🪲", name: "Flea & Tick Control", slug: "flea-tick-control" },
+  { icon: "🪳", name: "Roach Pest Control", slug: "roach-control" },
+  { icon: "🛏️", name: "Bed Bug Pest Control", slug: "bed-bug-control" },
 ];
 
 const ServicesSection = () => {
@@ -29,17 +29,17 @@ const ServicesSection = () => {
 
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
           {services.map((service) => (
-            <div key={service.name} className="card-service cursor-pointer group">
+            <Link key={service.slug} to={`/services/${service.slug}`} className="card-service cursor-pointer group">
               <div className="text-5xl mb-4 group-hover:scale-110 transition-transform">
                 {service.icon}
               </div>
               <h3 className="text-comic text-lg text-foreground">{service.name}</h3>
-            </div>
+            </Link>
           ))}
         </div>
 
         <div className="text-center mt-12">
-          <a href="#quote" className="btn-cta">Get Your Quote</a>
+          <Link to="/quote" className="btn-cta">Get Your Quote</Link>
         </div>
       </div>
     </section>

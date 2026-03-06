@@ -1,5 +1,6 @@
-import interiorService from "@/assets/interior-service.jpg";
+import { Link } from "react-router-dom";
 import { Phone } from "lucide-react";
+import interiorService from "@/assets/interior-service.jpg";
 
 const ExpertSection = () => {
   return (
@@ -18,10 +19,9 @@ const ExpertSection = () => {
                 <Phone className="w-5 h-5" />
                 (903) 871-0550
               </a>
-              <a href="#quote" className="btn-cta">Get Your Quote</a>
+              <Link to="/quote" className="btn-cta">Get Your Quote</Link>
             </div>
           </div>
-
           <div className="cyan-border overflow-hidden">
             <img
               src={interiorService}

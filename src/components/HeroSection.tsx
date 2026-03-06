@@ -1,7 +1,19 @@
+import { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import dangSeal from "@/assets/dang-seal.png";
+import { Play } from "lucide-react";
 
 const HeroSection = () => {
+  const [isPlaying, setIsPlaying] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  const handlePlay = () => {
+    setIsPlaying(true);
+    setTimeout(() => {
+      videoRef.current?.play();
+    }, 100);
+  };
+
   return (
     <section className="hero-bg relative overflow-hidden">
       <div className="container mx-auto px-4 py-20 md:py-32">
@@ -17,12 +29,45 @@ const HeroSection = () => {
               Get Your Quote
             </Link>
           </div>
-          <div className="flex justify-center">
+          <div className="flex justify-center relative">
             <img
               src={dangSeal}
               alt="Dang Super Powered Guarantee Seal"
               className="w-72 md:w-96 animate-float drop-shadow-2xl"
             />
+          </div>
+        </div>
+
+        {/* Video Section */}
+        <div className="mt-12 flex justify-center">
+          <div className="w-full max-w-2xl rounded-2xl overflow-hidden shadow-2xl cyan-border relative">
+            {!isPlaying ? (
+              <button
+                onClick={handlePlay}
+                className="relative w-full block group cursor-pointer"
+                aria-label="Play Video"
+              >
+                <img
+                  src="/video-poster.webp"
+                  alt="Dang Pest Control Video"
+                  className="w-full aspect-video object-cover"
+                />
+                <div className="absolute inset-0 bg-foreground/30 flex items-center justify-center group-hover:bg-foreground/40 transition-colors">
+                  <div className="w-20 h-20 rounded-full bg-primary flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                    <Play className="w-10 h-10 text-primary-foreground ml-1" />
+                  </div>
+                </div>
+              </button>
+            ) : (
+              <video
+                ref={videoRef}
+                className="w-full aspect-video"
+                controls
+                preload="auto"
+                controlsList="nodownload"
+                src="https://www.dangpestcontrol.com/wp-content/uploads/2025/04/dang-pest-homepage.mp4"
+              />
+            )}
           </div>
         </div>
       </div>

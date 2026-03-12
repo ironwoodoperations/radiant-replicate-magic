@@ -12,6 +12,7 @@ const pestLinks = [
   { label: "Rodent Control", href: "/services/rodent-control" },
   { label: "Flea & Tick Control", href: "/services/flea-tick-control" },
   { label: "Bed Bug Control", href: "/services/bed-bug-control" },
+  { label: "Snake Control", href: "/services/snake-control" },
 ];
 
 const Navbar = () => {

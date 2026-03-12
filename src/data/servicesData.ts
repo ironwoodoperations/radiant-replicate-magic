@@ -569,6 +569,104 @@ export const servicesData: Record<string, ServiceData> = {
       text: "Don't allow bed bugs to disrupt your life. Act now with Dang Pest Control's proven and effective bed bug control services. Located in Tyler, TX, we proudly serve Longview, Jacksonville, Lindale, Bullard, Whitehouse, and surrounding areas.",
     },
   },
+
+  "snake-control": {
+    title: "Snake Control & Prevention",
+    subtitle: "snake control",
+    heroImage: snakeHero,
+    heroAlt: "Snake removal and control services in East Texas",
+    intro: "East Texas is home to a wide variety of snakes—both venomous and non-venomous. While most snakes are harmless and even beneficial for controlling rodent populations, encountering a copperhead, cottonmouth, or rattlesnake near your home is a serious safety concern. Dang Pest Control provides professional snake identification, removal, and prevention services to keep your family and pets safe. Call us today at (903) 871-0550.",
+    processTitle: "Our Snake Control Process",
+    processIntro: "Our approach to snake control goes beyond simple removal. We identify the species, eliminate the conditions that attract snakes to your property, and create barriers to prevent their return.",
+    steps: [
+      {
+        title: "Step 1",
+        subtitle: "Property Inspection & Snake Identification",
+        icon: processStep1,
+        description: "Our trained technicians conduct a thorough inspection of your property—including the yard, foundation, crawl spaces, sheds, and woodpiles—to identify snake activity, entry points, and harborage areas. We identify the species involved so we can determine whether the snake is venomous and tailor our approach accordingly.",
+      },
+      {
+        title: "Step 2",
+        subtitle: "Habitat Modification & Exclusion",
+        icon: processStep2,
+        description: "Snakes are attracted to properties that offer food, water, and shelter. We address the root causes by recommending and implementing habitat modifications: clearing debris piles, sealing gaps in foundations, trimming overgrown vegetation, and eliminating rodent populations that serve as a food source for snakes.",
+      },
+      {
+        title: "Step 3",
+        subtitle: "Snake Removal & Deterrent Treatment",
+        icon: processStep3,
+        description: "If snakes are present on your property, our technicians safely remove them. We then apply professional-grade snake deterrent treatments around the perimeter of your home and key areas to discourage snakes from returning.",
+      },
+      {
+        title: "Step 4",
+        subtitle: "Ongoing Monitoring & Prevention",
+        icon: processStep4,
+        description: "Snake activity in East Texas peaks from spring through fall. We offer ongoing seasonal treatments and monitoring to ensure your property stays snake-free year-round. Our preventive approach addresses the conditions that draw snakes in before they become a problem.",
+      },
+    ],
+    extraSections: [
+      {
+        title: "Venomous Snakes in East Texas",
+        content: [
+          "East Texas is home to four species of venomous snakes that pose a real danger to families and pets. Knowing which snakes are in your area is the first step to staying safe.",
+          "Copperheads are the most commonly encountered venomous snake in East Texas. They have distinctive hourglass-shaped tan and brown bands and are often found in wooded areas, leaf litter, gardens, and near homes. Copperhead bites are painful and require immediate medical attention.",
+          "Cottonmouths (Water Moccasins) are semi-aquatic pit vipers found near lakes, creeks, ponds, and drainage ditches throughout the region. They are aggressive when threatened and deliver a potent hemotoxic venom. They're identifiable by their thick, dark bodies and the white interior of their mouth.",
+          "Timber Rattlesnakes are found in the wooded, hilly areas of East Texas. They are large, heavy-bodied snakes with distinctive rattles on their tails. While they generally avoid humans, they will strike if stepped on or cornered. Their venom is highly toxic and bites require emergency medical care.",
+          "Texas Coral Snakes are less common but extremely dangerous. They have bright red, yellow, and black bands. Remember the rhyme: 'Red touches yellow, kills a fellow; red touches black, friend of Jack.' Coral snakes are reclusive but their neurotoxic venom is the most potent of any North American snake.",
+        ],
+        image: coralSnakeImg,
+        imageAlt: "Texas coral snake with distinctive red, yellow and black bands",
+      },
+      {
+        title: "Common Non-Venomous Snakes in East Texas",
+        content: [
+          "Not all snakes are dangerous. In fact, many snakes found in East Texas are beneficial because they help control rodent, insect, and other pest populations. However, even non-venomous snakes can be startling and unwelcome around your home.",
+          "Texas Rat Snakes are among the most commonly seen snakes in the region. They are large—sometimes exceeding 5 feet—and are excellent climbers. They're often found in attics, barns, and chicken coops where they hunt rodents and eggs.",
+          "Coachwhip snakes are fast-moving and can grow up to 6 feet long. They are not aggressive but will flee quickly when encountered. They are commonly seen in open fields and along roadsides.",
+          "Rough Green Snakes are small, bright green, and completely harmless. They feed on insects and spiders and are frequently found in trees and shrubs near homes.",
+          "While these snakes are harmless, their presence often indicates conditions that could also attract venomous species—such as rodent populations, dense vegetation, or standing water. Our team can assess your property and reduce the factors that attract all snake species.",
+        ],
+        image: rattlesnakeImg,
+        imageAlt: "Snake commonly found in East Texas brush country",
+      },
+      {
+        title: "Why Snakes Are Attracted to Your Property",
+        content: [
+          "Understanding why snakes show up on your property is key to keeping them away. Snakes don't seek out human contact—they're following food, water, and shelter.",
+        ],
+        bulletPoints: [
+          "Rodent infestations — Mice and rats are a primary food source for many snake species. If you have a rodent problem, snakes will follow.",
+          "Overgrown vegetation — Tall grass, dense shrubs, and unmaintained landscaping provide ideal cover for snakes.",
+          "Woodpiles and debris — Stacked firewood, rock piles, leaf litter, and construction debris create perfect hiding spots.",
+          "Standing water — Ponds, birdbaths, clogged gutters, and drainage issues attract cottonmouths and other water-loving species.",
+          "Gaps in foundations and outbuildings — Cracks in foundations, unsealed crawl spaces, and gaps under sheds and porches allow snakes to enter structures.",
+          "Chicken coops and pet food — Eggs and pet food left outside attract rodents, which in turn attract snakes.",
+        ],
+      },
+    ],
+    whyChooseUs: [
+      { icon: provenResults, title: "Proven Snake Removal", description: "Our technicians are trained in safe snake identification and removal, including venomous species common to East Texas." },
+      { icon: comprehensive, title: "Comprehensive Prevention", description: "We don't just remove snakes—we eliminate the conditions that attract them, including rodent control and habitat modification." },
+      { icon: safety, title: "Family & Pet Safety", description: "All our treatments and methods are designed to protect your family and pets while effectively deterring snakes from your property." },
+      { icon: guarantee, title: "Super Powered Guarantee", description: "Pests persist? No problem. We provide free re-treatments between regularly scheduled visits to keep your property protected." },
+      { icon: localExperts, title: "Local East Texas Experts", description: "We know the snakes of East Texas. Our team has extensive experience dealing with copperheads, cottonmouths, rattlesnakes, and coral snakes specific to this region." },
+      { icon: customPlans, title: "Custom Treatment Plans", description: "Every property is different. We develop tailored snake prevention plans based on your property's unique layout, landscaping, and risk factors." },
+    ],
+    whyChooseIntro: "Snake control requires specialized knowledge and experience. At Dang Pest Control, we combine expert identification, safe removal, and long-term prevention to give you peace of mind.",
+    faqs: [
+      { question: "What should I do if I see a snake on my property?", answer: "Do not attempt to handle or kill the snake—even non-venomous snakes can bite when threatened. Keep a safe distance, keep children and pets away, and call Dang Pest Control at (903) 871-0550. If you can safely take a photo from a distance, it can help us identify the species before arrival." },
+      { question: "How can I tell if a snake is venomous?", answer: "In East Texas, venomous snakes (copperheads, cottonmouths, and rattlesnakes) are pit vipers with triangular-shaped heads, vertical slit pupils, and heat-sensing pits between their eyes and nostrils. Coral snakes are the exception—they have small, rounded heads but distinctive red, yellow, and black banding. When in doubt, treat every snake as potentially dangerous and call a professional." },
+      { question: "Are snake repellents effective?", answer: "Over-the-counter snake repellents like mothballs and sulfur have limited effectiveness and can be toxic to pets and children. Professional-grade deterrent treatments applied strategically around your property are far more effective, especially when combined with habitat modification and rodent control." },
+      { question: "What time of year are snakes most active in East Texas?", answer: "Snakes in East Texas are most active from April through October when temperatures are warm. They are especially active in spring when they emerge from brumation (winter dormancy) and in fall when they're seeking shelter. However, warm winter days can also bring snakes out of hiding." },
+      { question: "Will removing snakes cause a rodent problem?", answer: "This is a common concern. Our integrated approach addresses both issues simultaneously. We control the rodent population that attracts snakes while also implementing snake prevention measures, so you don't trade one pest problem for another." },
+      { question: "Do you kill the snakes you remove?", answer: "We prioritize humane removal and relocation of non-venomous snakes whenever possible, as they play an important role in the local ecosystem. Venomous snakes found in immediate proximity to living areas are handled according to the safety needs of the situation." },
+      { question: "How do I snake-proof my yard?", answer: "Key steps include keeping grass mowed short, removing woodpiles and debris, sealing gaps in foundations and outbuildings, eliminating standing water, and addressing any rodent issues. Our technicians provide a detailed property assessment with specific recommendations tailored to your property." },
+    ],
+    bottomCTA: {
+      title: "Keep Your Family Safe from Snakes",
+      text: "Don't take chances with venomous snakes on your property. Dang Pest Control provides expert snake identification, removal, and prevention services throughout East Texas—including Tyler, Longview, Jacksonville, Lindale, Bullard, Whitehouse, and surrounding areas.",
+    },
+  },
 };
 
 export const serviceKeys = Object.keys(servicesData);

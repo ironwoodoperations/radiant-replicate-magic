@@ -1,6 +1,5 @@
 import { useState, useRef } from "react";
 import { Link } from "react-router-dom";
-import dangSeal from "@/assets/dang-seal.png";
 import { Play } from "lucide-react";
 
 const HeroSection = () => {
@@ -23,9 +22,9 @@ const HeroSection = () => {
               Super Powered<br />Pest Control
             </h1>
             <p className="text-primary-foreground/90 text-lg max-w-lg leading-relaxed">
-              We are a hands-on, personable, relationship-based company. We live, work, worship, and play in the Tyler community. Our innovative pest control practices make us stand out amongst our competitors.
+              We are a hands-on, personable, relationship-based company. We live, work, worship, and play in the Tyler community. Our innovative pest control practices make us stand out amongst our competitors. Our goal is to be an active part in making our community and the lives of our clients better. We stand by our work and guarantee satisfaction.
             </p>
-            <Link to="/quote" className="btn-cta inline-block">
+            <Link to="/quote" className="btn-cta-outline inline-block">
               Get Your Quote
             </Link>
           </div>
@@ -60,15 +59,6 @@ const HeroSection = () => {
               )}
             </div>
           </div>
-        </div>
-
-        {/* Guarantee Seal Section */}
-        <div className="mt-12 flex justify-center">
-          <img
-            src={dangSeal}
-            alt="Dang Super Powered Guarantee Seal"
-            className="w-72 md:w-96 animate-float drop-shadow-2xl"
-          />
         </div>
       </div>
     </section>
